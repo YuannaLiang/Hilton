@@ -1,0 +1,50 @@
+{
+  "type": "module",
+  "name": "remix",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/remix.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "scripts": {
+    "build": "npx remix build",
+    "serve": "PORT=3005 REST_URL=http://47.106.148.194:1337 npx remix-serve build/index.js",
+    "dev": "remix dev -c \"node server.mjs\"",
+    "test": "node ./__tests__/remix.test.js",
+    "docker:build": "docker build -t hilton-remix .",
+    "docker:run": "docker run -p 3004:3004 -d --name hilton-remix hilton-remix"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.1.0",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.8.6",
+    "@remix-run/express": "^2.1.0",
+    "@remix-run/node": "^2.1.0",
+    "@remix-run/react": "^2.1.0",
+    "@remix-run/serve": "^2.1.0",
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.6.0",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "graphql": "^16.8.1",
+    "isbot": "^3.7.0",
+    "postcss": "^8.4.31",
+    "qs": "^6.11.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "store": "^2.0.12"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cucumber",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/cucumber.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "cucumber-js --publish"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "chromedriver": "^118.0.1",
+    "selenium-webdriver": "^4.14.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "lodash": "^4.17.21"
+  }
+}

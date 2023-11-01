@@ -1,0 +1,15 @@
+0 silly argv { _: [ 'create' ], lernaVersion: '7.4.1', '$0': 'lerna', name: 'rest' }
+1 notice cli v7.4.1
+2 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
+3 verbose rootPath /Users/keromac/WebstormProjects/hilton-mono
+4 warn ENOREMOTE No git remote found, skipping repository property
+5 error Error: canceled
+5 error     at Interface.<anonymous> (/Users/keromac/WebstormProjects/hilton-mono/node_modules/read/lib/read.js:79:15)
+5 error     at Interface.emit (node:events:513:28)
+5 error     at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1130:18)
+5 error     at ReadStream.onkeypress (node:internal/readline/interface:270:20)
+5 error     at ReadStream.emit (node:events:513:28)
+5 error     at emitKeys (node:internal/readline/utils:357:14)
+5 error     at emitKeys.next (<anonymous>)
+5 error     at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+5 error     at ReadStream.emit (node:events:513:28)

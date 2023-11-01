@@ -1,0 +1,10 @@
+type Query {
+    findReservations: [findReservationRes]
+    getReservation (id: ID!): getReservationRes
+}
+type Mutation {
+    register (payload: RegisterInput): localRes,
+    login (payload: LoginInput): localRes,
+    createReservation (payload: createReservationInput): getReservationRes
+    updateReservation (id: ID!, payload: updateReservationInput): getReservationRes
+}

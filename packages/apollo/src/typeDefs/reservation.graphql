@@ -1,0 +1,30 @@
+input reservationInput {
+    guest: ID!
+    adult: Int!
+    children: Int
+    expectTime: String!
+    status: Int
+}
+input createReservationInput {
+    reservation: reservationInput
+    log: logInput
+}
+input updateReservationInput {
+    reservation: reservationInput
+    log: logInput
+}
+type findReservationRes {
+    id: String
+    adult: Int
+    children: Int
+    expectTime: String
+    status: Int
+}
+type getReservationRes {
+    id: String
+    adult: Int
+    children: Int
+    expectTime: String
+    status: Int
+    logs: [logRes]
+}

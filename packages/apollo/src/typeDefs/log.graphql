@@ -1,0 +1,8 @@
+input logInput {
+    action: String!
+}
+type logRes {
+    id: String
+    action: String
+    createdAt: String
+}

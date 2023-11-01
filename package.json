@@ -1,0 +1,27 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "cucumber:test": "lerna run --scope cucumber test",
+    "remix:dev": "lerna run --scope remix dev",
+    "remix:build": "lerna run --scope remix build",
+    "remix:start": "lerna run --scope remix serve",
+    "remix:docker:build": "lerna run --scope remix docker:build",
+    "remix:docker:run": "lerna run --scope remix docker:run",
+    "apollo:dev": "lerna run --scope apollo dev",
+    "apollo:start": "lerna run --scope apollo start",
+    "apollo:docker:build": "lerna run --scope apollo docker:build",
+    "apollo:docker:run": "lerna run --scope apollo docker:run"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^7.4.1"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=19.x.x",
+    "npm": "^8.0.0"
+  }
+}

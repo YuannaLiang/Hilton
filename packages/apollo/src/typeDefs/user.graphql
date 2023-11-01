@@ -1,0 +1,23 @@
+type User {
+    _id: String
+    name: String
+    password: String
+}
+input LoginInput {
+    identifier: String!
+    password: String!
+}
+type localRes {
+    jwt: String
+    id: String
+    username: String
+    phone: String
+    type: Int
+}
+input RegisterInput {
+    username: String!
+    email: String!
+    password: String!
+    phone: String!
+    type: Int
+}
